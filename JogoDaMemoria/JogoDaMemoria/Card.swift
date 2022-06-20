@@ -10,12 +10,12 @@ import UIKit
 
 class Card {
     
-    var cardImage:UIImageView
+    var cardImage:UIImage
     var selected:Bool
+    var back:UIImage = #imageLiteral(resourceName: "card_back")
     
-    init(cardImage:UIImageView, selected:Bool) {
+    init(cardImage:UIImage, selected:Bool) {
         self.cardImage = cardImage
         self.selected = selected
     }
-    
 }
