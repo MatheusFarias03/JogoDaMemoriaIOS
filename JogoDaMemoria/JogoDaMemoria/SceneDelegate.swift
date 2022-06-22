@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  JogoDaMemoria
+//  JogoDaMemoriaVersion2
 //
-//  Created by Matheus Matsumoto on 17/06/22.
+//  Created by Matheus Matsumoto on 20/06/22.
 //
 
 import UIKit

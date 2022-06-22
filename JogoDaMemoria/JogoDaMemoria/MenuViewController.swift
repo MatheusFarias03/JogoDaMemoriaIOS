@@ -1,15 +1,16 @@
 //
 //  ViewController.swift
-//  JogoDaMemoria
+//  JogoDaMemoriaVersion2
 //
-//  Created by Matheus Matsumoto on 17/06/22.
+//  Created by Matheus Matsumoto on 20/06/22.
 //
 
 import UIKit
 
 class MenuViewController: UIViewController {
 
-    @IBOutlet weak var pairNumberLabel: UILabel!
+    
+    @IBOutlet weak var numberLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,19 +18,18 @@ class MenuViewController: UIViewController {
     }
 
     @IBAction func stepperPressed(_ sender: UIStepper) {
-        pairNumberLabel.text = String(Int(sender.value))
+        numberLabel.text = String(Int(sender.value))
     }
     
-    @IBAction func playButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "goToGame", sender: self)
+    @IBAction func playButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToGame", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToGame" {
             let destinationVC = segue.destination as! GameViewController
-            destinationVC.pairCardsNum = Int(pairNumberLabel.text ?? "4")
+            destinationVC.cardsNum = Int(numberLabel.text!)
         }
     }
-    
 }
 

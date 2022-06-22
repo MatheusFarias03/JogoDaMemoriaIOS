@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  JogoDaMemoria
+//  JogoDaMemoriaVersion2
 //
-//  Created by Matheus Matsumoto on 17/06/22.
+//  Created by Matheus Matsumoto on 20/06/22.
 //
 
 import UIKit
@@ -32,8 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-            return UIInterfaceOrientationMask.portrait
-        }
+                return UIInterfaceOrientationMask.portrait
+            }
 
 
 }
